@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topNav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #2a5296;
+  padding: 1rem;
+  justify-content: space-between;
+  box-shadow: 0px 20px 50px 15px grey;
+  z-index: 9999;
+}
+
+.topNav button {
+  border: none;
+  background-color: #2a5296;
+}
+
+.topNav button img {
+  width: 30px;
+  height: 30px;
+}
+
+.navHamburger {
+  margin: auto 0;
+  width: 30px;
+}
+
+.navHamburger img{
+  width: 30px;
+  height: 30px;
+}
+
+.topNav h1 {
+  font-size: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sideMenu {
+  display: none;
+  position: absolute;
+  background-color: #2a5296;
+  width: 20%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideMenu ul {
+  list-style-type: none;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1.3rem;
+}
+
+.contentContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: -30;
+}
+.mainPic {
+  display: flex;
+  background: url("https://raw.githubusercontent.com/Zulinov/skillsProjects/main/canoe.jpg") no-repeat center top;
+  background-size: cover;
+  width: 1000px;
+  height: 600px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.mainPic h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+.mainContent h3 {
+  padding: 2rem 0 1.5rem 0;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mainContent h4 {
+  color: green;
+  font-size: 1.6rem;
+  text-decoration-line: underline;
+  padding: .5rem 0 1rem 0;
+  margin: 0;
+}
+
+.mainContent h5 {
+  font-size: 1.2rem;
+  padding: .2rem 0;
+  margin: 0;
+}
+
+.mainContent h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.5rem 0 1rem 0;
+  margin: 0;
+}
+
+.mainContent p {
+  margin-bottom: 5rem;
 }

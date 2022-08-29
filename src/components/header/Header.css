@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+  .topNav {
+    padding: .5rem;
+  }
+  .topNav h1 {
+    /* display: none; */
+    font-size: 1rem;
+  }
+  .sideMenu {
+    width: 80%;
+  }
+  .sideMenuLink {
+    font-size: .8rem;
+  }
+}
+
+.topNav {
+  display: flex;
+  background-color: #2a5296;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  justify-content: space-between;
+  box-shadow: -5px 10px 30px 5px #3c3c3c;
+  z-index: 1;
+}
+
+.topNav button {
+  border: none;
+  background-color: #2a5296;
+}
+
+.topNav button img {
+  width: 30px;
+  height: 30px;
+}
+
+.navHamburger {
+  margin: auto 0;
+  width: 30px;
+}
+
+.navHamburger img{
+  width: 30px;
+  height: 30px;
+}
+
+.topNav h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.sideMenu {
+  display: none;
+  position: fixed;
+  background-color: #2a5296;
+  width: 20%;
+  height: 100%;
+  z-index: 1;
+}
+
+.sideMenu ul {
+  list-style-type: none;
+  line-height: 3rem;
+  padding: 1.3rem;
+}
+
+.sideMenuLink {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.sideMenuLink:hover {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
